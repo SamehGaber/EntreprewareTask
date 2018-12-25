@@ -11,7 +11,8 @@ export class CommunicationService {
   constructor(private _http:Http) { }
 
   getAPI(){
+    // performing HTTP get request to the node server ( fetsh.js)
     return this._http.get('/fetch').pipe(map((response:Response) => response.json()));}
-    
+
 
 }

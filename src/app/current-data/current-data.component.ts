@@ -12,6 +12,7 @@ phoneData:any=[];
   constructor(private services:CommunicationService) { }
 
   ngOnInit() {
+    //subscribing the observable form the services and assign it to variable "phoneData" and with data Binding display it in the template
     this.services.getAPI().subscribe((retrieved) =>{
       this.phoneData=retrieved;
       console.log(this.phoneData);

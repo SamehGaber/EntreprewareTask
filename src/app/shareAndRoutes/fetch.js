@@ -8,6 +8,7 @@ var phoneNumber="201007596970"; // supposed to be entered by the user
 const URL ="http://apilayer.net/api/validate?";
 
 router.get('/',(req,res)=>{
+    // perofrming API request based on the entered number
     axios.get(`${URL}access_key=${API_Key}&number=${phoneNumber}`)
     .then(API=>{
         console.log(API.data);

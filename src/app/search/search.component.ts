@@ -28,6 +28,7 @@ export class SearchComponent implements OnInit {
     console.log(this.myForm.value);
     this.exportedNum =this.myForm.value;
     console.log(this.exportedNum);
+    // exportedNum supposed to be transported to "ShareAndRoutes/fetch.js" to perform the API request on the entered number
 
   }
   ngOnInit() {
