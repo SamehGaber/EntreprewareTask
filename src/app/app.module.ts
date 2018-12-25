@@ -10,6 +10,10 @@ import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { CurrentDataComponent } from './current-data/current-data.component';
 import {HttpModule } from '@angular/http';
+import {FormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -24,7 +28,9 @@ import {HttpModule } from '@angular/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpModule
+    HttpModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

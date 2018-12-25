@@ -4,7 +4,7 @@ const axios =require('axios');
 
 
 const API_Key="ccb9f2cb75dcde596ca5f2b1fca08593";
-var phoneNumber="+201007596970";
+var phoneNumber="201007596970";
 const URL ="http://apilayer.net/api/validate?";
 
 router.get('/',(req,res)=>{

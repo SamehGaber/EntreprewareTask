@@ -1,18 +1,19 @@
   
-    <form class="form-hotizontal " id="search" >
-        <div class="form-group   form-horizontal">
-          <div class="col-xs-6">
-            <input type="number"  id="city" class="form-control" placeholder="please enter a phone number .."  minlength=10  maxlength=10 >
-          </div>
-            <div class="col-xs-3 ">
-             <button type="submit" class="btn btn-default" routerLink = "/currentData" routerLinkActive="active">Validate</button>
-            </div>
-        </div>
-       
-       </form> 
-    
-    
+    <form class="form-hotizontal " [formGroup]="myForm" (ngSubmit)="onclick()">
+        <div class="form-group  form-horizontal">
+            <div class="col-xs-6">
+        <label for="num">phone Number</label>
+        <input title="please insert a valid number format"class="form-control" type="number" placeholder="Ex:(020-100)" formControlName="searchedNumber" id="num">
+        <button type="submit" class="form-control btn btn-success" [disabled]="!myForm.valid" routerLink = "/currentData" routerLinkActive="active">validate</button>
 
+      
+      </div>
+          
+          
+
+        </div>
+    </form>
+       
     
   
   
