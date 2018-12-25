@@ -12,7 +12,6 @@ export class CommunicationService {
 
   getAPI(){
     return this._http.get('/fetch').pipe(map((response:Response) => response.json()));}
-
-
+    
 
 }

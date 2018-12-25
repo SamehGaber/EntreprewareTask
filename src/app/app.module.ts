@@ -9,6 +9,7 @@ import {AppRoutingModule} from './app-routing/app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { CurrentDataComponent } from './current-data/current-data.component';
+import {HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CurrentDataComponent } from './current-data/current-data.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

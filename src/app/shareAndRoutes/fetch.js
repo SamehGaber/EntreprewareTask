@@ -9,9 +9,9 @@ const URL ="http://apilayer.net/api/validate?";
 
 router.get('/',(req,res)=>{
     axios.get(`${URL}access_key=${API_Key}&number=${phoneNumber}`)
-    .then(posts=>{
-        console.log(posts.data);
-        res.status(200).json(posts.data);
+    .then(API=>{
+        console.log(API.data);
+        res.status(200).json(API.data);
         
     })
     .catch(err=>{
