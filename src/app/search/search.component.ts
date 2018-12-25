@@ -3,7 +3,6 @@ import {NgForm} from '@angular/forms';
 import {FormsModule} from '@angular/forms';
 import { FormControl,FormGroup,Validators} from '@angular/forms';
 
-//import { Validators, FormBuilder, FormGroup, FormControl } from '@angular/forms';
 
 
 @Component({
@@ -12,6 +11,7 @@ import { FormControl,FormGroup,Validators} from '@angular/forms';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
+   exportedNum
   myForm = new FormGroup({
   searchedNumber : new FormControl('',Validators.compose(
     [Validators.minLength(11),
@@ -26,6 +26,8 @@ export class SearchComponent implements OnInit {
 
   onclick(){
     console.log(this.myForm.value);
+    this.exportedNum =this.myForm.value;
+    console.log(this.exportedNum);
 
   }
   ngOnInit() {
