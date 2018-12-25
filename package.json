@@ -26,6 +26,7 @@
     "firebase-admin": "^6.4.0",
     "nodemon": "^1.18.9",
     "rxjs": "~6.2.0",
+    "typescript-require": "^0.2.10",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
@@ -45,8 +46,8 @@
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.4.0",
-    "ts-node": "~7.0.0",
+    "ts-node": "^7.0.1",
     "tslint": "~5.11.0",
-    "typescript": "~2.9.2"
+    "typescript": "^2.9.2"
   }
 }

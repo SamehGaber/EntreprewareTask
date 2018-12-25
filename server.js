@@ -1,7 +1,14 @@
+require('typescript-require')({
+    nodeLib: false,
+    targetES5: true,
+    exitOnError: true,
+    emitOnError: true
+});
 const express = require('express');
 const path = require('path');
 bodyParser = require('body-parser')
 const app = express();
+
 
 // getting our  routes
 const fetch = require('./src/app/shareAndRoutes/fetch');

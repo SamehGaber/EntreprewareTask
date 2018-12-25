@@ -1,22 +1,24 @@
-  
+<div class="panel panel-default" style="width:40%">
+<div class="panel-heading">phone Number validation </div>
+    <div class="panel-body" >
     <form class="form-hotizontal " [formGroup]="myForm" (ngSubmit)="onclick()">
         <div class="form-group  form-horizontal">
             <div class="col-xs-6">
-        <label for="num">phone Number</label>
-        <input title="please insert a valid number format"class="form-control" type="number" placeholder="Ex:(020-100)" formControlName="searchedNumber" id="num">
-        <button type="submit" class="form-control btn btn-success" [disabled]="!myForm.valid" routerLink = "/currentData" routerLinkActive="active">validate</button>
+        <label for="num">please Enter a phone Number</label>
+        <input class="form-control" type="number" placeholder="Ex:(020-100)" formControlName="searchedNumber" id="num">
+        <button title="please insert a valid number format" id="button1"type="submit" class="form-control btn btn-success" [disabled]="!myForm.valid" routerLink = "/currentData" routerLinkActive="active">validate</button>
 
       
-      </div>
+        </div>
           
           
 
         </div>
     </form>
        
-    
-  
-  
+  </div>
+ 
+</div>
   
   
   
