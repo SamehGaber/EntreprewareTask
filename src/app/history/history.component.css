@@ -1,0 +1,14 @@
+.table{
+     
+    background-color: #FDFDFD;
+   
+    
+
+}
+.table td:hover{
+    color:gray;
+}
+
+.table td{
+    color: rgb(61, 58, 58);
+}
