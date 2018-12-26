@@ -5,10 +5,12 @@ import { HeaderComponent } from '../header/header.component';
 import { HomeComponent } from '../home/home.component';
 import {SearchComponent} from '../search/search.component';
 import {CurrentDataComponent} from '../current-data/current-data.component';
+import {HistoryComponent} from '../history/history.component';
 const routes:Routes= [
   {path:'home',component: HomeComponent},
   {path:'search',component: SearchComponent},
   {path:'currentData',component: CurrentDataComponent},
+  {path:'history',component: HistoryComponent},
   {path:'',redirectTo:'/home',pathMatch:'full'}
   ];
 

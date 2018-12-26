@@ -9,6 +9,7 @@ import {CommunicationService} from '../communication.service';
 })
 export class CurrentDataComponent implements OnInit {
 phoneData:any=[];
+
   constructor(private services:CommunicationService) { }
 
   ngOnInit() {
@@ -16,7 +17,10 @@ phoneData:any=[];
     this.services.getAPI().subscribe((retrieved) =>{
       this.phoneData=retrieved;
       console.log(this.phoneData);
+
+
     });
+
 
 
 

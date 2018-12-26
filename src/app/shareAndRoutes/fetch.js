@@ -1,11 +1,9 @@
+
 const express =require('express');
 const router =express.Router();
 const axios =require('axios');
-const fs = require('../search/search.component');
-const dummy =fs.exportedNum;
-console.log(dummy);
 const API_Key="ccb9f2cb75dcde596ca5f2b1fca08593";
-var phoneNumber="201007596970"; // supposed to be entered by the user 
+var phoneNumber="+201007596970"; // supposed to be entered by the user 
 const URL ="http://apilayer.net/api/validate?";
 
 router.get('/',(req,res)=>{

@@ -4,3 +4,17 @@ color:black;
 .panel{
     background-image:url(https://ak9.picdn.net/shutterstock/videos/19625329/thumb/1.jpg);
 }
+
+#historyPanel{
+
+    float: left;
+}
+
+#button2{
+    color:black;
+    width:30%;
+    position: relative;
+    margin-left: 110px;
+    
+    
+    }

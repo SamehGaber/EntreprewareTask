@@ -12,6 +12,7 @@ import { CurrentDataComponent } from './current-data/current-data.component';
 import {HttpModule } from '@angular/http';
 import {FormsModule} from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HistoryComponent } from './history/history.component';
 
 
 
@@ -23,7 +24,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     InquiryComponent,
     HomeComponent,
     SearchComponent,
-    CurrentDataComponent
+    CurrentDataComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,

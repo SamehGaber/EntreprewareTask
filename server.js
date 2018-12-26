@@ -4,6 +4,9 @@ require('typescript-require')({
     exitOnError: true,
     emitOnError: true
 });
+const dummy =require('./src/app/search/search.component');
+
+
 const express = require('express');
 const path = require('path');
 bodyParser = require('body-parser')
